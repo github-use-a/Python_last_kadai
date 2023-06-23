@@ -22,3 +22,38 @@ button {
     padding: 10px;
     border: solid 1px #778ca3;
    }
+
+.flex_test-box {
+    background-color: blanchedalmond;     /* 背景色指定 */
+    padding:  10px;             /* 余白指定 */
+    display: flex;              /* フレックスボックスにする */
+    flex-wrap: wrap;            /* 折り返し指定 */
+}
+ 
+.flex_test-item {
+    padding: 10px;
+    color:  #fff;               /* 文字色 */
+    margin:  40px;              /* 外側の余白 */
+    margin-left: 140px;
+    border-radius:  5px;        /* 角丸指定 */
+    font-size:  80px;           /* 文字サイズ */
+    width: 400px;
+    height: 100px;               /* 幅指定 */
+    text-align:  center;        /* 文字中央揃え */
+}
+ 
+.flex_test-item:nth-child(1) {
+    background-color:  #2196F3; /* 背景色指定 */
+}
+ 
+.flex_test-item:nth-child(2) {
+    background-color:  #4CAF50; /* 背景色指定 */
+}
+ 
+.flex_test-item:nth-child(3) {
+    background-color: #3F51B5; /* 背景色指定 */
+}
+ 
+.flex_test-item:nth-child(4) {
+    background-color:  #00BCD4; /* 背景色指定 */
+}
