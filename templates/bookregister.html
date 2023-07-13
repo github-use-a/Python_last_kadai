@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(36, 184, 198)">
+<h3>図書登録</h3>
+<form action="{{url_for('book_register_exe')}}" method="post">
+    タイトル:<input type="text" name="title" value="{{data.user_name if data is defined else ''}}"><br>
+    著者：<input type="text" name="author" value="{{data.password if data is defined else ''}}"><br>
+    カテゴリ:<input type="text" name="category" value="{{data.user_name if data is defined else ''}}"><br>
+    出版社：<input type="text" name="publisher" value="{{data.password if data is defined else ''}}"><br>
+    <button type="submit">登録</button>
+</form> 
+
+<br>
+<br>
+
+<a href="{{url_for('back_booklist')}}">戻る</a>
+
+
+</body>
+</html>

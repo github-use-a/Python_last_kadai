@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='/css/user.css')}}">
+</head>
+<body  style="background-color:rgb(36, 184, 198)">
+  <h3>マイページ</h3>
+  ようこそ<br>
+  <a href="{{url_for('logout')}}">ログアウト</a>
+
+
+  <br>
+
+  <div class="item-list">
+    <div class="item">
+      <font size="5"><a href="{{url_for('book_register')}}">図書登録</a></font>
+    </div>
+    <div class="item">
+      <font size="5"><a href="{{url_for('book_list')}}">図書一覧</a></font>
+    </div>
+
+</div>
+
+<br>
+<br>
+
+<div class="item-list">
+    <div class="item">
+      <font size="5"><a href="{{url_for('book_delete')}}">図書削除</a></font>
+    </div>
+    <div class="item">
+      <font size="5"><a href="{{url_for('book_delete')}}">図書削除</a></font>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(36, 184, 198)">
+<h3>図書一覧</h3>
+
+<form action="{{url_for('book_select_delete')}}" method="post">
+    タイトル：<input type="text" name="keyword" value="{{keyword}}">
+    <input type="submit" value="削除"></button>
+</form>
+
+
+<a href="{{url_for('back_booklist')}}">戻る</a>
+
+</body>
+</html>

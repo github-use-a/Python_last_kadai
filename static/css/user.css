@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.item-list{
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+  }
+  .item-list .item{
+    box-sizing: border-box;
+    padding: 40px 100px;
+    background-color: greenyellow;
+    font-size: 30px;
+  }
+
+  
+/* 装飾用 */
+
+.item{
+    background:none;
+    margin: 50px;
+  }
