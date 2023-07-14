@@ -120,15 +120,16 @@ def book_select_delete():
 
 
 
-
-
-
     
     
 @app.route('/logout')
 def logout():
     session.pop('user', None)   # session の破棄
     return redirect(url_for('index'))   # ログイン画面にリダイレクト
+
+
+
+
 
     
 if __name__ == '__main__':
