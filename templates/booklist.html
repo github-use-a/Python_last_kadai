@@ -10,28 +10,39 @@
 <body>
 <div id="top" class="background" >
 
-<h3>図書一覧</h3>
-<table border="1">
- <tr>
-    <th style="color:green; text-align: left;" width="180">タイトル</th>
-    <th style="color:green; text-align: left;"  width="180">著者</th>
-    <th style="color:green; text-align: left;" width="180">カテゴリ</th>
-    <th style="color:green; text-align: left;" width="180">出版社</th>
- </tr>
+   <h3 style="text-align:center">図書一覧</h3>
+   <table border="1">
+   <tr>
+      <th style="color:green; text-align: left;" width="320">タイトル</th>
+      <th style="color:green; text-align: left;"  width="320">著者</th>
+      <th style="color:green; text-align: left;" width="320">カテゴリ</th>
+      <th style="color:green; text-align: left;" width="320">出版社</th>
+   </tr>
 
- {% for book in books%}
- <tr>
-    <th style="color:none; text-align: left;" width="180">{{ book[0] }}</th>
-    <th style="color:none; text-align: left;" width="180">{{ book[1] }}</th>
-    <th style="color:none; text-align: left;" width="180">{{ book[2] }}</th>
-    <th style="color:none; text-align: left;" width="180">{{ book[3] }}</th>
- </tr>
- {% endfor %}
+   {% for book in books%}
+   <tr>
+      <th style="color:none; text-align: left;" width="320"><font size="2">{{ book[0] }}<font></th>
+      <th style="color:none; text-align: left;" width="320"><font size="2">{{ book[1] }}<font></th>
+      <th style="color:none; text-align: left;" width="320"><font size="2">{{ book[2] }}<font></th>
+      <th style="color:none; text-align: left;" width="320"><font size="2">{{ book[3] }}<font></th>
+   </tr>
+   {% endfor %}
 
-</table>
-<br>
-<br>
-<a href="{{url_for('back_booklist')}}">戻る</a>
+   </table>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+      <div style="text-align:right">
+      <a href="{{url_for('back_booklist')}}">戻る</a>
+      </div>
 </div>
 </body>
 </html>

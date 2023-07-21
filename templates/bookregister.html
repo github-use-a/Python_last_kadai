@@ -9,20 +9,53 @@
 </head>
 <body>
 <div id="top" class="background" >
-<h3>図書登録</h3>
-<form action="{{url_for('book_register_exe')}}" method="post">
-    タイトル:<input type="text" name="title" value="{{data.user_name if data is defined else ''}}"><br>
-    著者：<input type="text" name="author" value="{{data.password if data is defined else ''}}"><br>
-    カテゴリ:<input type="text" name="category" value="{{data.user_name if data is defined else ''}}"><br>
-    出版社：<input type="text" name="publisher" value="{{data.password if data is defined else ''}}"><br>
-    <button type="submit">登録</button>
-</form> 
+    <h3 style="text-align:center">図書登録</h3>
+    <form action="{{url_for('book_register_exe')}}" method="post">
+    <form2 class="example2">
+    <table border="1">
+    <tr>
+            <td>タイトル</td>
+            <td><input type="text" name="title" value="{{data.user_name if data is defined else ''}}"></td>
+    </tr>
+    <tr>
+            <td>著者</td>
+            <td><input type="text" name="author" value="{{data.password if data is defined else ''}}"></td>
+        </tr>
+        <tr>
+            <td>カテゴリ</td>
+            <td><input type="text" name="category" value="{{data.user_name if data is defined else ''}}"></td>
+        </tr>
+        <tr>
+            <td>出版社</td>
+            <td><input type="text" name="publisher" value="{{data.password if data is defined else ''}}"></td>
+        </tr>
+        </table>
+        <div>
+        <button type="submit">登録</button>
+        </div>
+    </form2>
+    </form> 
 
-<br>
-<br>
-
-<a href="{{url_for('back_booklist')}}">戻る</a>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div style="text-align:right">
+        <a href="{{url_for('back_booklist')}}">戻る</a>
+        </div>
 </div>
 </body>
 </html>

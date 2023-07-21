@@ -25,3 +25,15 @@
     background-image: url(../image/book1.jpg);
     background-repeat: no-repeat;
   }
+
+
+.example2{
+    border: 1px solid none;
+    background: #e3f5ff;
+}
+.example2 table{
+    /*コレ*/margin: auto;
+}
+.example2>div{
+    text-align: center;
+}

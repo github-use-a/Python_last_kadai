@@ -8,43 +8,42 @@
 </head>
 <body>
 <div id="top" class="background" >
+  <font size="5"><p style="text-align:center">書籍管理マイページ<p></font>
 
-<h3>マイページ</h3>
+    <div style="text-align: right">
+      <a href="{{url_for('logout')}}">ログアウト</a>
+    </div>
+      
+      <br>
+      <br>
+      <br>
+      <br>
 
-  <div style="text-align: right">
-    <a href="{{url_for('logout')}}">ログアウト</a>
-  </div>
+
+
+      
+      <div class="item-list">
+      <div class="item">
+        <font size="5"><a href="{{url_for('book_register')}}">図書登録</a></font>
+      </div>
+      <div class="item">
+        <font size="5"><a href="{{url_for('book_list')}}">図書一覧</a></font>
+      </div>
+      
+    </div>
     
     <br>
     <br>
-    <br>
-    <br>
-
-
-
     
     <div class="item-list">
-    <div class="item">
-      <font size="5"><a href="{{url_for('book_register')}}">図書登録</a></font>
+      <div class="item">
+        <font size="5"><a href="{{url_for('book_delete')}}">図書削除</a></font>
+      </div>
+      <div class="item">
+        <font size="5"><a href="">実装未定</a></font>
+      </div>
+      
     </div>
-    <div class="item">
-      <font size="5"><a href="{{url_for('book_list')}}">図書一覧</a></font>
-    </div>
-    
-  </div>
-  
-  <br>
-  <br>
-  
-  <div class="item-list">
-    <div class="item">
-      <font size="5"><a href="{{url_for('book_delete')}}">図書削除</a></font>
-    </div>
-    <div class="item">
-      <font size="5"><a href="">未実装</a></font>
-    </div>
-    
-  </div>
 </div>
   
 </body>

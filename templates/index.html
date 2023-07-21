@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/user.css')}}">
     <title>Document</title>
 </head>
 <body style="background-color:rgb(36, 184, 198)">
-<h3>ログイン画面</h3>
+<h3 style="text-align:center ">ログイン画面</h3>
 {% if error != null %}
-    <p style="color:red">{{error}}</p>
+    <p style="color:red; text-align:center">{{error}}</p>
 {% endif %}
 {% if msg != null %}
-    <p style="color:blue">{{msg}}</p>
+    <p style="color:blue; text-align:center">{{msg}}</p>
 {% endif %}
 <form action="{{url_for('login')}}" method="post">
-    ユーザ名:<input type="text" name="username" value="{{data.user_name if data is defined else ''}}"><br>
-    パスワード：<input type="password" name="password" value="{{data.password if data is defined else ''}}"><br>
-<button type="submit">ログイン</button>
-</form> 
+ <form2 class="example2">
+    <table border="1">
+        <tr>
+            <td>ユーザ名</td>
+            <td><input type="text" name="username" value="{{data.user_name if data is defined else ''}}"></td>
+        </tr>
+        <tr>
+            <td>パスワード</td>
+            <td><input type="password" name="password" value="{{data.password if data is defined else ''}}"></td>
+        </tr>
+    </table>
+    <div>
+        <button type="submit">ログイン</button>
+    </div>
+ </form2>
+</form>
+
+<br>
+
+<div style="text-align:center">
 <a href="{{url_for('register_form')}}">新規登録</a>
+</div>
 </body>
 </html>

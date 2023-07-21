@@ -9,15 +9,43 @@
 </head>
 <body>
 <div id="top" class="background" >
-<h3>図書削除</h3>
+    <h3 style="text-align:center">図書削除</h3>
 
-<form action="{{url_for('book_select_delete')}}" method="post">
-    タイトル：<input type="text" name="keyword" value="{{keyword}}">
-    <input type="submit" value="削除"></button>
-</form>
+    <form action="{{url_for('book_select_delete')}}" method="post">
+    <form2 class="example2">
+    <table border="1">
+        <tr>
+            <td>タイトル</td>
+            <td><input type="text" name="keyword" value="{{keyword}}"></td>
+            <td><input type="submit" value="削除"></button></td>
+        </tr>
+    </table>
+    </form2>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
-<a href="{{url_for('back_booklist')}}">戻る</a>
+
+    <div style="text-align:right">
+    <a href="{{url_for('back_booklist')}}">戻る</a>
+    </div>        
 
 </div>
 
