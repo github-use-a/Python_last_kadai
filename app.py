@@ -114,7 +114,6 @@ def book_select_delete():
     db.delete_book(title)
     return render_template('mypage.html')
 
-#図書検索
 
 
 
